@@ -10,12 +10,15 @@ import styles from "./mainPage.module.css";
 const Main: React.FC = (): React.ReactElement => {
   return (
     <>
-      <div className={styles.wrapper}>
+      <main className={styles.wrapper}>
+        <h2>Welcome to RumiWare</h2>
+        <div>
 
-        <div>메인 페이지</div>
+          {/* 무한 스크롤 콘텐츠 */}
 
 
-      </div>
+        </div>
+      </main>
     </>
   );
 };
