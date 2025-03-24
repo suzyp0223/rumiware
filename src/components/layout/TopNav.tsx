@@ -1,7 +1,8 @@
 import React from "react";
-import styles from "../css/main.module.css"; // CSS 모듈 사용
+import "../css/main.module.css";
+import styles from "./topNav.module.css";
 
-import rumiLogo from "../../assets/rumiLogo1.jpg";
+import rumiLogo from "../../assets/img/rumiLogo1.jpg";
 import hamBtn from "../../assets/icon/hamBtn.svg";
 import search from "../../assets/icon/search.svg";
 import myPage from "../../assets/icon/my-page.svg";

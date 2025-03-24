@@ -1,7 +1,6 @@
-@import url("../css/theme.module.css");
-@import url("../css/base.module.css");
+@import url("../css/baseStyle/a11y.module.css");
+@import url("../css/baseStyle/base.module.css");
 
-@import url("../css/a11y.module.css");
+@import url("../css/baseStyle/theme.module.css");
 
 
-@import url("../css/topNav.module.css");

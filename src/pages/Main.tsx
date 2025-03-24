@@ -3,12 +3,14 @@
 // 실제로 화면을 다시 불러오지 않음{SPA}
 
 import React from "react";
+import "../components/css/main.module.css";
+import styles from "./mainPage.module.css";
 
 
 const Main: React.FC = (): React.ReactElement => {
   return (
     <>
-      <div className="wrapper">
+      <div className={styles.wrapper}>
 
         <div>메인 페이지</div>
 
