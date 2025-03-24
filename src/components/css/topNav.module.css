@@ -1,0 +1,105 @@
+body {
+  padding-top: 14rem; /* 헤더 높이만큼 여백 추가 */
+}
+.wrapper {
+  border: 1px solid black;
+  margin: 0 auto;
+  height: 14rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  width: 100%;
+  /* background-color: var(--color-blue-100); */
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 5fr 1.5fr;
+  grid-template-rows: 2fr;
+  grid-template-areas:
+    "logo  hamBtn   search   info"
+    "logo linkList linkList info";
+
+  align-items: center;
+  justify-items: center;
+}
+.logoContainer,
+.hamBtnContainer,
+.searchContainer,
+.myContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoContainer {
+  grid-area: logo;
+}
+.logoContainer:hover {
+  outline: 2px solid var(--color-red-200);
+}
+.hamBtnContainer {
+  grid-area: hamBtn;
+  width: 10rem;
+  height: 10rem;
+  background-color: var(--color-red-200);
+  margin-top: 2rem;
+  color: white;
+}
+.sidebarBtn > figcaption {
+  padding-top: 1rem;
+  font-size: 12px;
+}
+.hamBtnContainer:hover {
+  border: 2px solid var(--color-red-300);
+}
+
+.searchContainer {
+  grid-area: search;
+  cursor: pointer;
+}
+.searchInput {
+  outline: 1px solid var(--color-red-200);
+  transition: border-width 0.3s ease;
+  border-radius: 4px 0 0 4px;
+}
+.searchInput:hover {
+  outline: 2px solid var(--color-red-200);
+  border-radius: 4px 0 0 4px;
+}
+.searchInput {
+  width: 40rem;
+  height: 6rem;
+  padding: 2rem;
+}
+.searchBtn {
+  outline: 1px solid var(--color-red-200);
+  border-radius: 0 4px 4px 0;
+}
+.searchBtn:hover {
+  border-radius: 0 4px 4px 0;
+  outline: 2px solid var(--color-red-200);
+}
+
+.myContainer {
+  grid-area: info;
+  font-size: 1rem;
+}
+
+.myPage > a,
+.myCart > a{
+  /* border: 1px solid black; */
+  padding: 3rem;
+}
+
+.myPage > a > img,
+.myCart > a > img{
+  padding-bottom: 0.5rem;
+}
+
+
+
+.linkList {
+  grid-area: linkList;
+  display: flex;
+}
