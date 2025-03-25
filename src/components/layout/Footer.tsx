@@ -29,10 +29,10 @@ const Footer: React.FC = (): React.ReactElement => {
           <div className={styles.textContainer}>
 
             <div className={styles.personalInfoBox}>
-              <p className={styles.title}>LumiWare 루미웨어</p>
-              <p className={styles.email}>suzyp0223@gmail.com</p>
-              <p className={styles.phone}>010.3395.0640</p>
-              <p className={styles.name}>made by 박수지</p>
+              <p className={styles.title}><a href="">LumiWare 루미웨어</a></p>
+              <p className={styles.email}><a href="">suzyp0223@gmail.com</a></p>
+              <p className={styles.phone}><a href="">010.3395.0640</a></p>
+              <p className={styles.name}><a href="">made by 박수지</a></p>
             </div>
 
             <div className={styles.resumeBox}>

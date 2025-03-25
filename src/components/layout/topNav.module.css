@@ -48,7 +48,6 @@ body {
 .myPage:hover,
 .myCart:hover {
   color: var(--color-red-400);
-  font-weight: 700;
 }
 
 .logoContainer {
@@ -74,7 +73,6 @@ body {
   grid-area: hamBtn;
   height: 14rem;
   color: var(--color-red-400);
-  font-weight: bold;
   position: relative;
   margin-left: 3rem;
 }
@@ -87,6 +85,7 @@ body {
   left: 10px;
   margin-top: -7.5rem;
 }
+
 
 .searchContainer {
   grid-area: search;
@@ -128,7 +127,13 @@ body {
 }
 .myPage > a,
 .myCart > a {
-  padding: 3rem;
+  padding: 2rem;
+}
+.myPage > figcaption {
+  margin-left: 1rem;
+}
+.myCart > figcaption {
+  margin-left: 2rem;
 }
 .myPage > a > img {
   margin-top: 0.5rem;
@@ -155,6 +160,5 @@ body {
 }
 .linkList .linkListA:hover {
   color: var(--color-red-400);
-  font-weight: 700;
   transform: scale(1.1);
 }
