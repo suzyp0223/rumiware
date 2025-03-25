@@ -4,7 +4,7 @@
 
 import React from "react";
 
-const ProductDetail: React.FC = (): React.ReactElement => {
+const ProductsDetail: React.FC = (): React.ReactElement => {
   return (
     <>
       <div className="${TM_FILENAME_BASE.toLowerCase()}">
@@ -14,4 +14,4 @@ const ProductDetail: React.FC = (): React.ReactElement => {
   );
 };
 
-export default ProductDetail;
+export default ProductsDetail;

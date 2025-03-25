@@ -26,65 +26,70 @@ const Footer: React.FC = (): React.ReactElement => {
 
         <footer className={styles.footerWrapper}>
           <div className={styles.textContainer}>
+            <div className={styles.personalContainer}>
 
-            <div className={styles.personalBox}>
-              <p className={styles.title}>LumiWare 루미웨어</p>
-              <p className={styles.email}>suzyp0223@gmail.com</p>
-              <p className={styles.phone}>010.3395.0640</p>
-              <p className={styles.name}>made by 박수지</p>
-              <p className={styles.resume}>이력서</p>
-              <p className={styles.blog}><a href="https://ppojjakcoding.tistory.com">뽀짝코딩</a></p>
-              <p className={styles.githup}><a href="https://github.com/suzyp0223?tab=repositories">suzyp0223</a></p>
+              <div className={styles.personalInfoBox}>
+                <p className={styles.title}>LumiWare 루미웨어</p>
+                <p className={styles.email}>suzyp0223@gmail.com</p>
+                <p className={styles.phone}>010.3395.0640</p>
+                <p className={styles.name}>made by 박수지</p>
+              </div>
+
+            <div className={styles.resumeBox}>
+                <p className={styles.resume}>이력서</p>
+                <p className={styles.blog}><a href="https://ppojjakcoding.tistory.com">뽀짝코딩</a></p>
+                <p className={styles.githup}><a href="https://github.com/suzyp0223?tab=repositories">suzyp0223</a></p>
             </div>
-
+            
+            </div>
 
             <div className={styles.sourceBox}>
               {/* 투명도 넣기 */}
               <p className={styles.sourceTitle}>출처</p>
-              <p className={styles.sourceLink}>
-                <a href="https://unsplash.com">
-                  <img src="https://unsplash.com/favicon-32x32.png" />
-                </a></p>
-              {/* 검색어 예시: clothing, fashion, apparel */}
-              <p className={styles.sourceLink}>
-                <a href="https://www.pexels.com">
-                  <img src="https://www.pexels.com/assets/static/images/meta/pexels-icon.png"
-                    style={{ width: '20px', height: '20px' }} />
-                </a></p>
-              {/* 검색어 예시: clothing, fashion, men's fashion, women's fashion */}
-              <p className={styles.sourceLink}>
-                <a href="https://pixabay.com">
-                  <img src="https://pixabay.com/favicon-32x32.png" />
-                </a></p>
-              {/* 검색어 예시: clothing, fashion, apparel */}
-              <p className={styles.sourceLink}>
-                <a href="https://burst.shopify.com">
-                  <img src="https://cdn.shopify.com/shopifycloud/growth_tools/assets/global/favicon-ab7018e1fe708a49edcfecce3166032fbeeb1fd7ba4a078c366de344d32ee193.png" />
-                </a></p>
-              {/* 검색어 예시: clothing, fashion, clothes */}
-              <p className={styles.sourceLink}>
-                <a href="https://www.freepik.com">
-                  <img src="https://cdn-front.freepik.com/favicons/favicon.svg?v=2" alt="freepikIcon"></img>
-                </a></p>
-              {/* 검색어 예시: clothing, fashion, apparel */}
-              <p className={styles.sourceLink}>
-                <a href="https://www.rawpixel.com">
-                  <img
-                    src="https://static2.rawpixel.com/_next/static/images/rawpixel-logomark-black-394a2cad2aa430631a56cc6b871d6ca1.png"
-                    alt="Rawpixel logo"
-                    style={{ width: '20px', height: '20px' }}  // 원하는 크기 조정
-                  />
-                </a></p>
-              {/* 검색어 예시: fashion, clothing, men's fashion, women's fashion */}
-              <p className={styles.sourceLink}>
-                <a href="https://stocksnap.io">
-                  <FontAwesomeIcon icon={faCameraRetro} />
-                </a></p>
-              {/* 검색어 예시: fashion, clothing, apparel */}
-              <p className={styles.sourceLink}>
-                <a href="https://www.lifeofpix.com">
-                  <img src="https://www.lifeofpix.com/dist/favicon-32x32.png" />
-                </a></p>
+              <div className={styles.sourceLinkBox}>
+                <p className={styles.sourceLink}>
+                  <a href="https://unsplash.com">
+                    <img src="https://unsplash.com/favicon-32x32.png" />
+                  </a></p>
+                {/* 검색어 예시: clothing, fashion, apparel */}
+                <p className={styles.sourceLink}>
+                  <a href="https://www.pexels.com">
+                    <img src="https://www.pexels.com/assets/static/images/meta/pexels-icon.png"
+                     />
+                  </a></p>
+                {/* 검색어 예시: clothing, fashion, men's fashion, women's fashion */}
+                <p className={styles.sourceLink}>
+                  <a href="https://pixabay.com">
+                    <img src="https://pixabay.com/favicon-32x32.png" />
+                  </a></p>
+                {/* 검색어 예시: clothing, fashion, apparel */}
+                <p className={styles.sourceLink}>
+                  <a href="https://burst.shopify.com">
+                    <img src="https://cdn.shopify.com/shopifycloud/growth_tools/assets/global/favicon-ab7018e1fe708a49edcfecce3166032fbeeb1fd7ba4a078c366de344d32ee193.png" />
+                  </a></p>
+                {/* 검색어 예시: clothing, fashion, clothes */}
+                <p className={styles.sourceLink}>
+                  <a href="https://www.freepik.com">
+                    <img src="https://cdn-front.freepik.com/favicons/favicon.svg?v=2" alt="freepikIcon"></img>
+                  </a></p>
+                {/* 검색어 예시: clothing, fashion, apparel */}
+                <p className={styles.sourceLink}>
+                  <a href="https://www.rawpixel.com">
+                    <img
+                      src="https://static2.rawpixel.com/_next/static/images/rawpixel-logomark-black-394a2cad2aa430631a56cc6b871d6ca1.png"
+                      alt="Rawpixel logo"/>
+                  </a></p>
+                {/* 검색어 예시: fashion, clothing, men's fashion, women's fashion */}
+                <p className={styles.sourceLink}>
+                  <a href="https://stocksnap.io">
+                    <FontAwesomeIcon icon={faCameraRetro} />
+                  </a></p>
+                {/* 검색어 예시: fashion, clothing, apparel */}
+                <p className={styles.sourceLink}>
+                  <a href="https://www.lifeofpix.com">
+                    <img src="https://www.lifeofpix.com/dist/favicon-32x32.png" />
+                  </a></p>
+              </div>
               {/* 검색어 예시: fashion, clothing */}
             </div>
 

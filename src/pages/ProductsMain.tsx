@@ -4,10 +4,10 @@
 
 import React from "react";
 import "../components/css/main.module.css";
-import styles from "./mainPage.module.css";
+import styles from "./productsMain.module.css";
 
 
-const Main: React.FC = (): React.ReactElement => {
+const ProductsMain: React.FC = (): React.ReactElement => {
   return (
     <>
       <main className={styles.wrapper}>
@@ -23,4 +23,4 @@ const Main: React.FC = (): React.ReactElement => {
   );
 };
 
-export default Main;
+export default ProductsMain;
