@@ -27,6 +27,9 @@ html {
   /* width: 100%; */
   /* display: flex; */
 }
+.textContainer > p > a{
+  font-size: 2rem;
+}
 .textContainer {
   display: inline-flex;
   flex-direction: row;
@@ -45,6 +48,7 @@ html {
 .textContainer > div > p {
   padding: 0.5rem;
 }
+.textContainer > p > a:hover,
 .textContainer > div > p > a:hover {
   color: var(--color-red-300);
 }

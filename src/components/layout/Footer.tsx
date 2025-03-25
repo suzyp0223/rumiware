@@ -4,7 +4,9 @@ import styles from "./footer.module.css";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCameraRetro } from '@fortawesome/free-solid-svg-icons';
-
+import Resume from "../../assets/icon/resume.svg";
+import GitHub from "../../assets/icon/github.svg";
+import Phone from "../../assets/icon/phone.svg";
 
 
 const Footer: React.FC = (): React.ReactElement => {
@@ -27,18 +29,48 @@ const Footer: React.FC = (): React.ReactElement => {
         <footer className={styles.footerWrapper}>
           {/* <div className={styles.textContainer}> */}
           <div className={styles.textContainer}>
+            <p className={styles.title}><a href="/">LumiWare 루미웨어</a></p>
 
             <div className={styles.personalInfoBox}>
-              <p className={styles.title}><a href="">LumiWare 루미웨어</a></p>
-              <p className={styles.email}><a href="">suzyp0223@gmail.com</a></p>
-              <p className={styles.phone}><a href="">010.3395.0640</a></p>
-              <p className={styles.name}><a href="">made by 박수지</a></p>
+              <p className={styles.email}>
+                <a href="">
+                  <img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico" style={{ width: "24px", height: "24px" }} />
+                  suzyp0223@gmail.com
+                </a>
+              </p>
+              <p className={styles.phone}>
+                <a href="">
+                  <img src={Phone} />
+                  010.3395.0640
+                </a>
+              </p>
+              <p className={styles.name}>
+                <a href="">
+
+                  made by 박수지
+                </a>
+              </p>
             </div>
 
             <div className={styles.resumeBox}>
-              <p className={styles.resume}><a href="">이력서</a></p>
-              <p className={styles.blog}><a href="https://ppojjakcoding.tistory.com">뽀짝코딩</a></p>
-              <p className={styles.githup}><a href="https://github.com/suzyp0223?tab=repositories">https://github.com/suzyp0223</a></p>
+              <p className={styles.resume}>
+                <a href="">
+                  <img src={Resume} />
+                  이력서
+                </a>
+              </p>
+              <p className={styles.blog}>
+                <a href="https://ppojjakcoding.tistory.com">
+                  <img src="https://t1.daumcdn.net/tistory_admin/favicon/tistory_favicon_32x32.ico" />
+                  뽀짝코딩
+                </a>
+              </p>
+              <p className={styles.githup}>
+                <a href="https://github.com/suzyp0223?tab=repositories">
+                  <img src={GitHub} />
+                  https://github.com/suzyp0223
+                </a>
+              </p>
             </div>
 
           </div>
