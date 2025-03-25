@@ -1,11 +1,11 @@
 // import { Routes, Route } from 'react-router-dom';
-// import { memo } from 'react';
+import { memo } from 'react';
 
-// import Error from '../error/Error';
+import Error from '../error/Error';
 // import ProductsMain from '../'
 
-// const Router = (): JSX.Element => {
+const Router = (): JSX.Element => {
 
-// };
+};
 
-// export default memo(Router);
+export default memo(Router);

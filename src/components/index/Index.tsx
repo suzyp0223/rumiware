@@ -1,18 +1,18 @@
-// import { useRecoilValue } from "recoil";
+import { useRecoilValue } from "recoil";
 
-// import ProductsMain  from "../../pages/ProductsMain";
-// import productsList from '../../pages/ProductsList';
+import ProductsMain  from "../../pages/ProductsMain";
+import productsList from '../../pages/ProductsList';
 
-// const Index = (): JSX.Element => {
-//   const products = useRecoilValue(productsList);
+const Index = (): JSX.Element => {
+  const products = useRecoilValue(productsList);
 
-//   return (
-//     <>
-//       <section className="">
-//         <ProductsMain products={products} />
-//       </section>
-//     </>
-//   );
-// }
+  return (
+    <>
+      <section className="">
+        <ProductsMain products={products} />
+      </section>
+    </>
+  );
+}
 
-// export default Index;
+export default Index;
