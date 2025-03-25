@@ -4,23 +4,24 @@
     "paths": {
       "@components/*": ["src/components/*"]
     },
+    "jsx": "react-jsx",
     "target": "ESNext",
-    "useDefineForClassFields": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "strict": true,
+    "noEmit": true,
+    "useDefineForClassFields": true,
     "allowJs": false,
     "skipLibCheck": false,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "strict": true,
     "noImplicitAny": false,
     "forceConsistentCasingInFileNames": true,
-    "module": "ESNext",
-    "moduleResolution": "Node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx",
-    "types": ["vite-plugin-svgr/client"]
+    "types": ["vite-plugin-svgr/client"],
+    "typeRoots": ["./node_modules/@types", "./node_modules/recoil"] // 추가한 부분
   },
   "files": [],
 

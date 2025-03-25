@@ -1,12 +1,8 @@
-import { BrowserRouter, Route } from 'react-router-dom'
-import {RecoilRoot} from 'recoil';
+import { BrowserRouter } from 'react-router-dom';
+import { RecoilRoot } from 'recoil';
+import Router from './components/router/Router';
 
-import './App.css'
-import Main from './pages/ProductsMain';
-import Login from './pages/Login';
-import Signup from './pages/Signup';
 import TopNav from './components/layout/TopNav';
-import Sidebar from './components/layout/Sidebar';
 import Footer from './components/layout/Footer';
 
 
@@ -15,15 +11,26 @@ function App() {
   return (
     <RecoilRoot>
       <BrowserRouter>
-          <Route path="/topNav" element={<TopNav />} />
-          <Route path="/sideBar" element={<Sidebar />} />
-          <Route path="/footer" element={<Footer />} />
-          <Route path="/" element={<Main />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/signup" element={<Signup />} />
+      {/* 사이드바, 토글 공부하기 250325화 */}
+        {/* <input type="checkbox" id="side-menu" className="drawer-toggle" /> */}
+        <section className='drawer-content'>
+          <TopNav />
+          <section className='main pt-16'>
+            <Router />
+          </section>
+          <Footer />
+        </section>
+        {/* <Drawer /> */}
       </BrowserRouter>
     </RecoilRoot>
   )
 }
 
 export default App
+//   .drawer - toggle: checked + .drawer - content {
+//   display: block; /* 사이드바를 표시 */
+// }
+
+// .drawer - toggle: not(: checked) + .drawer - content {
+//   display: none; /* 사이드바를 숨김 */
+// }

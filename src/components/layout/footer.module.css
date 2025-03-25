@@ -10,7 +10,7 @@ html {
   flex-direction: column;
   /* 최소 높이를 화면 크기로 설정 */
   /* min-height: 100vh; */
-  width: 102.3rem;
+  width: 100%;
 }
 
 /* 메인 콘텐츠 (무한 스크롤) */
@@ -20,13 +20,27 @@ html {
   padding: 20px;
 }
 
-
 /* 풋터 */
 .footerWrapper {
-  border: 1px solid black;
-  padding: 1rem;
+  background-color: var(--color-red-300);
   text-align: center;
-  width: 100%;
+  /* width: 100%; */
+  /* display: flex; */
+}
+.textContainer {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+  font-size: 1.3rem;
+  line-height: 13px;
+  margin: 0.5rem;
+}
+.textContainer > div > p {
+  padding: 0.5rem;
 }
 
 .sourceBox {
@@ -44,6 +58,7 @@ html {
 }
 .sourceTitle {
   height: 3rem;
+  font-size: 1.3rem;
 }
 .sourceLinkBox {
   display: flex;
@@ -59,7 +74,6 @@ html {
 .sourceLink > a > img:hover {
   filter: brightness(2.2);
   background-color: var(--color-red-300);
-
 }
 
 .sourceLink:nth-child(7) > a > * {
