@@ -9,8 +9,12 @@ import myPage from "../../assets/icon/my-page.svg";
 import cart from "../../assets/icon/cart.svg";
 
 
+interface TopNavProps {
+  toggleSidebar: () => void;
+}
 
-const TopNav: React.FC = (): React.ReactElement => {
+const TopNav: React.FC<TopNavProps> = ({ toggleSidebar }) => {
+
   return (
     <>
       <nav className={styles.wrapper}>
@@ -29,7 +33,7 @@ const TopNav: React.FC = (): React.ReactElement => {
 
         <div className={styles.hamBtnContainer}>
           <figure className={styles.hamBtn}>
-            <a href="">
+            <a href="#" onClick={toggleSidebar}>
               {/* 동적으로 마우스 호버시 햄버거버튼 색상변경 */}
               <img src={hamBtn} alt="ham-btn" />
             </a>

@@ -4,9 +4,16 @@ import Router from './components/router/Router';
 
 import TopNav from './components/layout/TopNav';
 import Footer from './components/layout/Footer';
+import Sidebar from './components/layout/Sidebar';
+import { useState } from 'react';
 
 
 function App() {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  const toggleSidebar = () => {
+    setIsSidebarOpen(!isSidebarOpen);
+  };
 
   return (
     <RecoilRoot>
@@ -14,7 +21,8 @@ function App() {
       {/* 사이드바, 토글 공부하기 250325화 */}
         {/* <input type="checkbox" id="side-menu" className="drawer-toggle" /> */}
         <section className='drawer-content'>
-          <TopNav />
+          <TopNav toggleSidebar={toggleSidebar} />
+          <Sidebar isOpen={isSidebarOpen} />
           <section className='main pt-16'>
             <Router />
           </section>
